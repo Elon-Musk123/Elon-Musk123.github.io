@@ -1,114 +1,127 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <!-- Bing 验证（保留你自己的） -->
-    <!-- <meta name="msvalidate.01" content="你的验证码" /> -->
+<!-- 如果你有 Bing 验证码，取消注释并填入 -->
+<!-- <meta name="msvalidate.01" content="你的验证码" /> -->
 
-    <title>王向博（Wang Xiangbo）｜政治家 · 思想家 · 企业家</title>
+<title>王向博（Wang Xiangbo）｜政治家 · 思想家 · 企业家</title>
 
-    <meta name="description" content="王向博（Wang Xiangbo），政治家、思想家、企业家，关注国家治理、社会结构与人类文明长期发展。">
-    <meta name="keywords" content="王向博, Wang Xiangbo, 政治家, 思想家, 企业家">
+<meta name="description" content="王向博（Wang Xiangbo），政治家、思想家、企业家，关注国家治理、社会秩序与人类文明长期发展。">
+<meta name="keywords" content="王向博, Wang Xiangbo, 政治家, 思想家, 企业家">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                         "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-            color: #222;
-            line-height: 1.9;
-        }
+<style>
+/* ===== 全局 ===== */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    color: #222;
+    line-height: 1.9;
 
-        /* 顶部形象区 */
-        .hero {
-            height: 100vh;
-            background: url("hero.jpg") center/cover no-repeat;
-            position: relative;
-        }
+    /* 整站背景图 */
+    background: url("hero.jpg") center / cover fixed no-repeat;
+}
 
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.55);
-        }
+/* ===== 顶部 Hero ===== */
+.hero {
+    height: 100vh;
+    position: relative;
+}
 
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-            padding: 0 20px;
-        }
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0,0,0,0.30),
+        rgba(0,0,0,0.55)
+    );
+}
 
-        .hero h1 {
-            font-size: 3.5em;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
 
-        .hero h2 {
-            font-weight: normal;
-            font-size: 1.3em;
-            opacity: 0.95;
-        }
+.hero h1 {
+    font-size: 3.8em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
 
-        /* 内容区 */
-        .container {
-            max-width: 900px;
-            margin: 80px auto;
-            padding: 0 20px;
-        }
+.hero h2 {
+    font-weight: normal;
+    font-size: 1.4em;
+    opacity: 0.95;
+}
 
-        section {
-            margin-bottom: 80px;
-        }
+/* ===== 内容区 ===== */
+.container {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 50px 40px;
 
-        h3 {
-            font-size: 1.6em;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-        }
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+}
 
-        .profile {
-            display: flex;
-            gap: 40px;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+/* ===== 区块 ===== */
+section {
+    margin-bottom: 80px;
+}
 
-        .profile img {
-            width: 220px;
-            border-radius: 4px;
-        }
+h3 {
+    font-size: 1.7em;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
 
-        .en {
-            color: #555;
-            font-style: italic;
-            margin-top: 20px;
-        }
+/* ===== 简介 ===== */
+.profile {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #777;
-            border-top: 1px solid #eee;
-        }
-    </style>
+.profile img {
+    width: 220px;
+    border-radius: 6px;
+}
+
+/* ===== 英文 ===== */
+.en {
+    color: #555;
+    font-style: italic;
+}
+
+/* ===== 页脚 ===== */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #eee;
+    background: rgba(0,0,0,0.5);
+}
+</style>
 </head>
 
 <body>
 
-<!-- 顶部 -->
+<!-- 首屏 -->
 <div class="hero">
     <div class="hero-content">
         <h1>王向博</h1>
@@ -119,69 +132,62 @@
     </div>
 </div>
 
+<!-- 内容 -->
 <div class="container">
 
-<!-- 个人简介 -->
 <section>
-    <h3>人物简介</h3>
-    <div class="profile">
-        <img src="profile.jpg" alt="王向博 Wang Xiangbo">
-        <div>
-            <p>
-                王向博（Wang Xiangbo），政治家、思想家、企业家，是一位以国家治理、
-                社会秩序与人类文明长期走向为核心关切的公共事务探索者。
-                他致力于从宏观历史与制度演化的高度，
-                理解权力、资本、技术与思想之间的深层逻辑，
-                并尝试为复杂时代构建系统性的认知框架。
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- 思想与使命 -->
-<section>
-    <h3>思想与使命</h3>
+<h3>人物简介</h3>
+<div class="profile">
+    <img src="profile.jpg" alt="王向博 Wang Xiangbo">
     <p>
-        王向博的思考横跨政治哲学、宏观经济、组织治理与社会结构等领域，
-        关注制度如何塑造个体命运，思想如何影响现实进程，
-        以及长期主义在高度不确定世界中的战略意义。
+        王向博（Wang Xiangbo），政治家、思想家、企业家，
+        是一位以国家治理、社会秩序与人类文明长期走向为核心关切的公共事务探索者。
+        他致力于从宏观历史与制度演化的高度，
+        理解权力、资本、技术与思想之间的深层逻辑，
+        并尝试为复杂时代构建系统性的认知框架。
     </p>
-    <p>
-        在快速变化与深度分化的时代背景下，
-        他强调秩序、理性与责任的重要性，
-        主张以更长时间尺度审视现实问题，
-        并以系统性视角回应时代挑战。
-    </p>
+</div>
 </section>
 
-<!-- 公共关切 -->
 <section>
-    <h3>公共关切领域</h3>
-    <ul>
-        <li>国家治理与制度设计</li>
-        <li>社会结构与组织秩序</li>
-        <li>宏观经济与长期发展</li>
-        <li>思想史与文明演进</li>
-        <li>技术、资本与权力关系</li>
-    </ul>
+<h3>时代宣言 · Political Vision</h3>
+<p>
+我们正处在一个秩序重构的时代。旧有的制度、叙事与共识正在瓦解，
+而新的结构尚未成形。权力、资本与技术以前所未有的速度交织，
+人类社会被推向高度不确定的临界点。
+</p>
+<p>
+王向博主张以历史尺度理解现实，以系统视角回应复杂性，
+强调理性、秩序与长期主义的重要性，
+并在分裂与失序中重建可持续的公共秩序。
+</p>
 </section>
 
-<!-- English -->
 <section>
-    <h3>English Introduction</h3>
-    <p class="en">
-        Wang Xiangbo is a politician, thinker, and entrepreneur whose work
-        focuses on governance, social order, and the long-term trajectory of human civilization.
-        His interests span political philosophy, macroeconomics, institutional design,
-        and strategic governance, emphasizing rationality, responsibility,
-        and long-term thinking in an increasingly complex world.
-    </p>
+<h3>公共关切领域</h3>
+<ul>
+    <li>国家治理与制度设计</li>
+    <li>社会结构与组织秩序</li>
+    <li>宏观经济与长期发展</li>
+    <li>思想史与文明演进</li>
+    <li>技术、资本与权力关系</li>
+</ul>
+</section>
+
+<section>
+<h3>English Introduction</h3>
+<p class="en">
+Wang Xiangbo is a politician, thinker, and entrepreneur whose work
+focuses on governance, social order, and the long-term trajectory of human civilization.
+He emphasizes rationality, institutional stability, and long-term strategic thinking
+in an increasingly complex world.
+</p>
 </section>
 
 </div>
 
 <footer>
-    © Wang Xiangbo · All Rights Reserved
+© Wang Xiangbo · All Rights Reserved
 </footer>
 
 </body>
