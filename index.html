@@ -3,43 +3,186 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>王向博（Wang Xiangbo）个人主页</title>
+    <!-- Bing 验证（保留你自己的） -->
+    <!-- <meta name="msvalidate.01" content="你的验证码" /> -->
 
-    <meta name="description" content="王向博（Wang Xiangbo）的个人主页网站，介绍个人背景、研究方向与联系方式。">
+    <title>王向博（Wang Xiangbo）｜政治家 · 思想家 · 企业家</title>
 
-    <meta name="keywords" content="王向博, Wang Xiangbo, 王向博个人主页">
+    <meta name="description" content="王向博（Wang Xiangbo），政治家、思想家、企业家，关注国家治理、社会结构与人类文明长期发展。">
+    <meta name="keywords" content="王向博, Wang Xiangbo, 政治家, 思想家, 企业家">
 
-   <meta name="msvalidate.01" content="F1185B14996C7E9D117F13977E5A48C2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            color: #222;
+            line-height: 1.9;
+        }
 
+        /* 顶部形象区 */
+        .hero {
+            height: 100vh;
+            background: url("hero.jpg") center/cover no-repeat;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .hero h2 {
+            font-weight: normal;
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        /* 内容区 */
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        h3 {
+            font-size: 1.6em;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .profile {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .profile img {
+            width: 220px;
+            border-radius: 4px;
+        }
+
+        .en {
+            color: #555;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>王向博</h1>
-    <p><strong>Wang Xiangbo</strong></p>
+<!-- 顶部 -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>王向博</h1>
+        <h2>
+            政治家 · 思想家 · 企业家<br>
+            公共事务与人类文明长期发展的探索者
+        </h2>
+    </div>
+</div>
 
-    <p>
-        这是王向博（Wang Xiangbo）的个人主页网站。
-    </p>
+<div class="container">
 
-    <h2>个人信息</h2>
-    <p>
-        姓名：王向博<br>
-        英文名：Wang Xiangbo<br>
-        本页面为王向博的个人主页。
-    </p>
+<!-- 个人简介 -->
+<section>
+    <h3>人物简介</h3>
+    <div class="profile">
+        <img src="profile.jpg" alt="王向博 Wang Xiangbo">
+        <div>
+            <p>
+                王向博（Wang Xiangbo），政治家、思想家、企业家，是一位以国家治理、
+                社会秩序与人类文明长期走向为核心关切的公共事务探索者。
+                他致力于从宏观历史与制度演化的高度，
+                理解权力、资本、技术与思想之间的深层逻辑，
+                并尝试为复杂时代构建系统性的认知框架。
+            </p>
+        </div>
+    </div>
+</section>
 
-    <h2>关于我</h2>
+<!-- 思想与使命 -->
+<section>
+    <h3>思想与使命</h3>
     <p>
-        我是王向博，目前主要从事相关学习与研究工作。
-        本网站用于展示王向博（Wang Xiangbo）的基本信息与联系方式。
+        王向博的思考横跨政治哲学、宏观经济、组织治理与社会结构等领域，
+        关注制度如何塑造个体命运，思想如何影响现实进程，
+        以及长期主义在高度不确定世界中的战略意义。
     </p>
+    <p>
+        在快速变化与深度分化的时代背景下，
+        他强调秩序、理性与责任的重要性，
+        主张以更长时间尺度审视现实问题，
+        并以系统性视角回应时代挑战。
+    </p>
+</section>
 
-    <h2>联系方式</h2>
-    <p>
-        Email：你的邮箱
+<!-- 公共关切 -->
+<section>
+    <h3>公共关切领域</h3>
+    <ul>
+        <li>国家治理与制度设计</li>
+        <li>社会结构与组织秩序</li>
+        <li>宏观经济与长期发展</li>
+        <li>思想史与文明演进</li>
+        <li>技术、资本与权力关系</li>
+    </ul>
+</section>
+
+<!-- English -->
+<section>
+    <h3>English Introduction</h3>
+    <p class="en">
+        Wang Xiangbo is a politician, thinker, and entrepreneur whose work
+        focuses on governance, social order, and the long-term trajectory of human civilization.
+        His interests span political philosophy, macroeconomics, institutional design,
+        and strategic governance, emphasizing rationality, responsibility,
+        and long-term thinking in an increasingly complex world.
     </p>
+</section>
+
+</div>
+
+<footer>
+    © Wang Xiangbo · All Rights Reserved
+</footer>
 
 </body>
 </html>
